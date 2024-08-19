@@ -1,25 +1,39 @@
-# Program ___
+# Program BlueJ Ticket Machine
 
 ## Program Description:  
-- Find the ____
-- Choose variable names which are meaningful for this problem, like Area, Width, etc.
-
-## Program Data:
-| C1  | C2 | C3 |
-| ----  | ---- | ---- |
-| Royale  | 286 | 9 |
-| Koopa   | 412 | 40 |
-| Pipe  | 361 | 18 |
-| Badwagon | 161 | 11 |
-
-## Statements Required: 
-- System.out
-- Variable Assignment
-- ...
-
-## Sample Output:
->Some
->
->Out
->
->Put
+- Live walkthrough of DumbTicketMachine Class
+- Make a new constructor that doesnt take input but sets the cost to whatever
+- Implement method
+  - empty
+  - Removes all money from machine
+  - Returns void
+  - Set total to 0
+  - Mutator or accessor?
+- Reflect on how bad this class is irl
+- Walkthrough SmaterTicketMachine
+  - refundBalance method
+  - Conditional Statements
+  - Test methods using object bench
+  - What will happen if we change to amount >= 0
+  - Rewrite conditional statement so that error prints if true
+    - Reverse behavior
+- Implement new method
+  - emptyMachine
+  - Simulate emptying machine
+  - Reset total to 0
+  - Return the value that was in total
+- Rewrite printTicket
+  - Add local variable, amountLeftToPay = price - balance
+  - Modify the code so that it integrates this and does not change overall behavior
+- Overall QA
+  - Make sure you can handle
+  - Negative money inserted
+  - Refund a balance
+  - Empty the machine of the money it collected by printing tickets
+  - Smart and not greedy
+    - Should only move $$ to total for tickets that are successfully printed)
+- Challenge:
+  - Create a new class called MyTicketMachine
+  - Extend the code from SmarterTicketMachine to add:
+  - Different priced tickets (i.e. Senior discount, child discount, etc)
+  - Modify any methods or fields to accommodate this change
